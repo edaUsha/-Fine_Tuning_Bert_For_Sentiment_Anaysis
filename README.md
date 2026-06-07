@@ -19,12 +19,12 @@ Base BERT parameters frozen, pooler layers unfrozen for efficient fine‑tuning.
 
 Training performed with Trainer and TrainingArguments (learning rate 2e-5, batch size 16, epochs 3) on a GPU runtime.
 
-Deployment:
+## Deployment:
 
 Model saved to results/ and  uploaded to Hugging Face Hub as [edaUsha/Fine_Tuning_Bert_For_Sentiment_Anaysis.
 ](https://huggingface.co/edaUsha/Fine_Tuning_Bert_For_Sentiment_Anaysis/blob/main/Fine_Tuning_Bert_For_Sentiment_Anaysis.ipynb)
 
-Metrics
+## Metrics
 Evaluation uses a custom compute_metrics function with accuracy_score and roc_auc_score from sklearn.metrics.
 
 Probability scores are obtained by applying softmax to the model logits.
